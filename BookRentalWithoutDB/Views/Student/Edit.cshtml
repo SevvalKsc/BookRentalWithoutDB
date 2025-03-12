@@ -1,0 +1,29 @@
+@model Student
+
+<form method="POST" asp-action="Edit" asp-controller="Student">
+
+    <table>
+        <thead>
+        <tr>
+            <td width="200"> ID </td>
+            <td><input asp-for="ID" class="form-control" readonly/></td>
+        </tr>
+        <tr>
+            <td width="200"> Name </td>
+            <td><input asp-for="Name" class="form-control" required/></td>
+        </tr>
+        <tr>
+            <td width="200"> Surname </td>
+            <td><input asp-for="Surname" class="form-control" required/></td>
+        </tr>
+        <tr>
+            <td width="200"> Birth Date </td>
+            <td><input asp-for="BirthDate" class="form-control" required/></td>
+        </tr>
+        <tr>
+            <td> <input type="submit" class="btn btn-success" asp-controller="Student" asp-action="Index"></td>
+        </tr>
+        </thead>
+    </table>
+    
+</form>
