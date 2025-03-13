@@ -48,15 +48,28 @@ public class StudentController : Controller
         return RedirectToAction("Index");
     }
     
-    [HttpPost]
     public IActionResult Edit(int id)
     {
         StudentRespository repository = new StudentRespository();
         var student = repository.GetStudent(id);
-        repository.Update(student);
-        return View(student);
+        if (student == null)
+        {
+            return NotFound();
+        }
+        else
+        {
+            return View(student);
+        }
     }
 
+    [HttpPost]
+    public IActionResult Edit(Student student)
+    {
+        StudentRespository repository = new StudentRespository();
+        repository.Update(student);
+        return RedirectToAction("Index");
+    }
+    
     public IActionResult Delete(int id)
     {
         StudentRespository repository = new StudentRespository();

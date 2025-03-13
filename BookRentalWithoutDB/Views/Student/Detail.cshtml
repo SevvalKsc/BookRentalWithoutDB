@@ -1,5 +1,7 @@
 @model Student
 
+<h3>Student Detail</h3>
+
 <table>
     <thead>
     <tr>
@@ -25,18 +27,14 @@
     <thead>
     <tr>
         <td>
-            <form asp-controller="Student" asp-action="Edit" asp-route-id="@Model.ID">
-                <button type="submit" class="btn btn-primary">
-                    Edit Student
-                </button>
-            </form>
+            <a asp-controller="Student" asp-action="Edit" asp-route-id="@Model.ID" class="btn btn-primary">
+                Edit Student
+            </a>
         </td>
         <td>
-            <form asp-controller="Student" asp-action="Delete" asp-route-id="@Model.ID" method="post">
-                <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this student?');">
-                    Remove Student
-                </button>
-            </form>
+            <a asp-controller="Student" asp-action="Delete" asp-route-id="@Model.ID" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this student?');">
+                Remove Student
+            </a>
         </td>
     </tr>
     </thead>

@@ -1,5 +1,7 @@
 @model Student
 
+<h3>Edit Student</h3>
+
 <form method="POST" asp-action="Edit" asp-controller="Student">
 
     <table>
@@ -21,7 +23,7 @@
             <td><input asp-for="BirthDate" class="form-control" required/></td>
         </tr>
         <tr>
-            <td> <input type="submit" class="btn btn-success" asp-controller="Student" asp-action="Index"></td>
+            <td> <input type="submit" class="btn btn-success"></td>
         </tr>
         </thead>
     </table>

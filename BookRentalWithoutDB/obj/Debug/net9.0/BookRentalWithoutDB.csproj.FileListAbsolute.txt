@@ -95,3 +95,4 @@
 /Users/sevvalksc/RiderProjects/BookRentalWithoutDB/BookRentalWithoutDB/obj/Debug/net9.0/BookRentalWithoutDB.pdb
 /Users/sevvalksc/RiderProjects/BookRentalWithoutDB/BookRentalWithoutDB/obj/Debug/net9.0/BookRentalWithoutDB.genruntimeconfig.cache
 /Users/sevvalksc/RiderProjects/BookRentalWithoutDB/BookRentalWithoutDB/obj/Debug/net9.0/ref/BookRentalWithoutDB.dll
+/Users/sevvalksc/RiderProjects/BookRentalWithoutDB/BookRentalWithoutDB/obj/Debug/net9.0/BookRentalWithoutDB.sourcelink.json
